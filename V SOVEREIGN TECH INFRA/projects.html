@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M/S. V-SOVEREIGN TECH-INFRA | Projects</title>
+  <meta name="description" content="Browse the infrastructure project portfolio for M/S. V-SOVEREIGN TECH-INFRA across various regions.">
+  <link rel="stylesheet" href="style.css">
+  <script src="translations.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <!-- Dynamic Header -->
+  <header id="site-header"></header>
+
+  <main>
+    <!-- Projects Header Hero -->
+    <section class="section section-bg" style="background-color: var(--color-neutral-light); padding: 60px 0;">
+      <div class="container text-center">
+        <div class="section-header center" style="margin-bottom: 0;">
+          <h2 data-i18n="projects.title">Project Portfolio</h2>
+          <p data-i18n="projects.subtitle">Demonstrating our execution capability across civil works, manpower supply, and logistics.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Gallery Filters & Grid -->
+    <section class="section" id="projects-gallery">
+      <div class="container">
+        
+        <!-- Filter bar -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all" data-i18n="projects.filter_all">All Projects</button>
+          <button class="filter-btn" data-filter="civil" data-i18n="projects.filter_civil">Civil Work</button>
+          <button class="filter-btn" data-filter="manpower" data-i18n="projects.filter_manpower">Man Power</button>
+          <button class="filter-btn" data-filter="transport" data-i18n="projects.filter_transport">Transport</button>
+        </div>
+
+        <!-- Grid -->
+        <div class="projects-grid">
+          
+          <!-- Project 1 (Civil) -->
+          <div class="project-card civil" data-index="1" data-category="civil">
+            <div class="project-image">
+              <span class="project-tag" data-i18n="projects.filter_civil">Civil Work</span>
+              <!-- TODO: Insert real photo of sub-grade stabilization on Kanaganapalli Link Road here -->
+              <img src="https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=800&q=80" alt="Subgrade Stabilization" class="project-img-fluid">
+            </div>
+            <div class="project-info">
+              <h3 data-i18n="projects.p1_title">Sub-grade Stabilization and Drainage Layout — Rural Connectivity Scheme</h3>
+              <p data-i18n="projects.p1_desc">Complete excavation, ground leveling, sub-base preparation, and construction of stone-pitched side drains for a 4km rural roadway corridor.</p>
+              <button class="btn btn-secondary view-project-details" data-i18n="projects.view_details">View Project Scope</button>
+            </div>
+          </div>
+
+          <!-- Project 2 (Civil) -->
+          <div class="project-card civil" data-index="2" data-category="civil">
+            <div class="project-image">
+              <span class="project-tag" data-i18n="projects.filter_civil">Civil Work</span>
+              <!-- TODO: Insert real photo of Anantapur warehouse structural foundations here -->
+              <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80" alt="Commercial Warehouse Foundation" class="project-img-fluid">
+            </div>
+            <div class="project-info">
+              <h3 data-i18n="projects.p2_title">Commercial Warehouse Foundation & Structural Frame Fabrication</h3>
+              <p data-i18n="projects.p2_desc">High-grade concrete footing, column casting, and structural steel reinforcement alignment for a commercial agricultural storage facility.</p>
+              <button class="btn btn-secondary view-project-details" data-i18n="projects.view_details">View Project Scope</button>
+            </div>
+          </div>
+
+          <!-- Project 3 (Manpower) -->
+          <div class="project-card manpower" data-index="3" data-category="manpower">
+            <div class="project-image">
+              <span class="project-tag" data-i18n="projects.filter_manpower">Man Power</span>
+              <!-- TODO: Insert real photo of technical masonry crews on high-density residential casting sites here -->
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Skilled Masonry crew" class="project-img-fluid">
+            </div>
+            <div class="project-info">
+              <h3 data-i18n="projects.p3_title">Skilled Masonry & Technical Supervision Deployment</h3>
+              <p data-i18n="projects.p3_desc">Mobilized an ongoing deployment of 25 certified concrete masons, bar-benders, and 2 dedicated site execution supervisors for high-density residential concrete casting.</p>
+              <button class="btn btn-secondary view-project-details" data-i18n="projects.view_details">View Project Scope</button>
+            </div>
+          </div>
+
+          <!-- Project 4 (Manpower) -->
+          <div class="project-card manpower" data-index="4" data-category="manpower">
+            <div class="project-image">
+              <span class="project-tag" data-i18n="projects.filter_manpower">Man Power</span>
+              <!-- TODO: Insert real photo of general workforce at Solar Park Development Zone here -->
+              <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80" alt="General Workforce" class="project-img-fluid">
+            </div>
+            <div class="project-info">
+              <h3 data-i18n="projects.p4_title">Contract Staffing & Security Deployment</h3>
+              <p data-i18n="projects.p4_desc">General construction labor force and certified safety personnel deployed for highway infrastructure projects.</p>
+              <button class="btn btn-secondary view-project-details" data-i18n="projects.view_details">View Project Scope</button>
+            </div>
+          </div>
+
+          <!-- Project 5 (Transport) -->
+          <div class="project-card transport" data-index="5" data-category="transport">
+            <div class="project-image">
+              <span class="project-tag" data-i18n="projects.filter_transport">Transport</span>
+              <!-- TODO: Insert real photo of bulk aggregate shipping fleet here -->
+              <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=800&q=80" alt="Bulk Aggregate Haulage" class="project-img-fluid">
+            </div>
+            <div class="project-info">
+              <h3 data-i18n="projects.p5_title">Aggregate & Bulk Material Logistics</h3>
+              <p data-i18n="projects.p5_desc">Dedicated tipper and truck fleet management supplying construction aggregates to multiple sites.</p>
+              <button class="btn btn-secondary view-project-details" data-i18n="projects.view_details">View Project Scope</button>
+            </div>
+          </div>
+
+          <!-- Project 6 (Transport) -->
+          <div class="project-card transport" data-index="6" data-category="transport">
+            <div class="project-image">
+              <span class="project-tag" data-i18n="projects.filter_transport">Transport</span>
+              <!-- TODO: Insert real photo of equipment logistics and material shifting here -->
+              <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80" alt="On-Site Material Logistics" class="project-img-fluid">
+            </div>
+            <div class="project-info">
+              <h3 data-i18n="projects.p6_title">On-Site Earthmoving Equipment Fleet</h3>
+              <p data-i18n="projects.p6_desc">Machinery transit and supply solutions including excavators and loaders for heavy pipeline layout.</p>
+              <button class="btn btn-secondary view-project-details" data-i18n="projects.view_details">View Project Scope</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed view modal markup (Hidden by default) -->
+    <div class="modal" id="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 id="modal-title">Project Title Placeholder</h3>
+          <button class="modal-close" id="modal-close-btn" aria-label="Close modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-body-meta">
+            <div class="meta-item">
+              <h4 data-i18n="projects.modal_vertical">Vertical</h4>
+              <p id="modal-field-vertical">Civil Work</p>
+            </div>
+            <div class="meta-item">
+              <h4 data-i18n="projects.modal_location">Location</h4>
+              <p id="modal-field-location">Dharmavaram Region, AP</p>
+            </div>
+          </div>
+          <div class="modal-body-desc">
+            <h4 data-i18n="projects.modal_scope">Detailed Scope</h4>
+            <p id="modal-field-scope">Scope description text details will appear here dynamically...</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" id="modal-footer-close" data-i18n="projects.modal_close">Close</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Dynamic Footer -->
+  <footer id="site-footer"></footer>
+
+</body>
+</html>

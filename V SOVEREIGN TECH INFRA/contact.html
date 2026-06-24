@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M/S. V-SOVEREIGN TECH-INFRA | Contact Us</title>
+  <meta name="description" content="Get in touch with M/S. V-SOVEREIGN TECH-INFRA for project inquiries, quotes, and collaborations.">
+  <link rel="stylesheet" href="style.css">
+  <script src="translations.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <!-- Dynamic Header -->
+  <header id="site-header"></header>
+
+  <main>
+    <!-- Contact Header Hero -->
+    <section class="section section-bg" style="background-color: var(--color-neutral-light); padding: 60px 0;">
+      <div class="container text-center">
+        <div class="section-header center" style="margin-bottom: 0;">
+          <h2 data-i18n="contact.title">Contact Us</h2>
+          <p data-i18n="contact.subtitle">Partner with us for your contracting, staffing, and logistics needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="section" id="contact-main">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <!-- Inquiry Form Panel -->
+          <div class="contact-form-panel">
+            <h3 data-i18n="contact.form_title">Send an Inquiry</h3>
+            
+            <form id="contact-form" action="https://formsubmit.co/vsovereigntechinfra@gmail.com" method="POST" novalidate>
+              <!-- FormSubmit Options -->
+              <input type="hidden" name="_subject" value="New Website Inquiry - M/S. V-SOVEREIGN TECH-INFRA">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="text" name="_honey" style="display:none">
+
+              <div class="form-group">
+                <label for="contact-name" data-i18n="contact.form_name">Your Name</label>
+                <input type="text" id="contact-name" name="name" class="form-control" data-i18n-placeholder="contact.form_name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="contact-phone" data-i18n="contact.form_phone">Phone Number</label>
+                <input type="tel" id="contact-phone" name="phone" class="form-control" placeholder="+91 8884879727" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="contact-email" data-i18n="contact.form_email">Email Address</label>
+                <input type="email" id="contact-email" name="email" class="form-control" placeholder="name@company.com" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="contact-service" data-i18n="contact.form_service">Service Interested In</label>
+                <select id="contact-service" name="service" class="form-control" required>
+                  <option value="" data-i18n-option="contact.form_service_select">-- Select Service --</option>
+                  <option value="Civil Work" data-i18n-option="contact.form_service_civil">Civil Work Contracts</option>
+                  <option value="Manpower Supply" data-i18n-option="contact.form_service_manpower">Man Power Supply</option>
+                  <option value="Transport Services" data-i18n-option="contact.form_service_transport">Transport Services</option>
+                  <option value="Other Inquiries" data-i18n-option="contact.form_service_other">Other Inquiries</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="contact-message" data-i18n="contact.form_msg">Message</label>
+                <textarea id="contact-message" name="message" class="form-control" data-i18n-placeholder="contact.form_msg" required></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="contact.form_submit">Submit Inquiry</button>
+              
+              <!-- Form validation status display -->
+              <div id="form-status-message" style="margin-top: 15px; font-weight: 600; text-align: center;"></div>
+            </form>
+          </div>
+
+          <!-- Direct Information Panel -->
+          <div class="contact-info-panel">
+            
+            <div class="info-section">
+              <h3 data-i18n="contact.info_title">Direct Contact Details</h3>
+              <div class="info-cards">
+                
+                <!-- Phone Calls (click to call) -->
+                <div class="info-card">
+                  <div class="info-card-icon" aria-hidden="true">📞</div>
+                  <div class="info-card-details">
+                    <h4 data-i18n="contact.info_phone">Phone Calls</h4>
+                    <a href="tel:+918884879727" id="phone-call-link" data-i18n="contact.info_phone_val">+91 8884879727</a>
+                  </div>
+                </div>
+
+                <!-- WhatsApp (click to chat) -->
+                <div class="info-card">
+                  <div class="info-card-icon" aria-hidden="true">💬</div>
+                  <div class="info-card-details">
+                    <h4 data-i18n="contact.info_whatsapp">WhatsApp Chat</h4>
+                    <a href="https://wa.me/918884879747" target="_blank" class="whatsapp-link" id="whatsapp-chat-link">
+                      <span data-i18n="contact.info_whatsapp_val">+91 8884879747</span>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Business Email -->
+                <div class="info-card">
+                  <div class="info-card-icon" aria-hidden="true">✉️</div>
+                  <div class="info-card-details">
+                    <h4 data-i18n="contact.info_email">Email Address</h4>
+                    <a href="mailto:vsovereigntechinfra@gmail.com" id="email-contact-link" data-i18n="contact.info_email_val">vsovereigntechinfra@gmail.com</a>
+                  </div>
+                </div>
+
+                <!-- Business Hours -->
+                <div class="info-card">
+                  <div class="info-card-icon" aria-hidden="true">⏰</div>
+                  <div class="info-card-details">
+                    <h4 data-i18n="contact.info_hours">Business Hours</h4>
+                    <!-- TODO: client to confirm working timings -->
+                    <p data-i18n="contact.info_hours_val">Monday – Saturday: 9:00 AM – 6:00 PM (IST)</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Registry Location Office Address -->
+            <div class="info-section">
+              <h3 data-i18n="contact.info_address_title">Registered Address</h3>
+              <div class="info-card" style="background-color: var(--color-neutral-light);">
+                <div class="info-card-icon" style="background-color: rgba(224, 142, 46, 0.1); color: var(--color-accent);" aria-hidden="true">📍</div>
+                <div class="info-card-details">
+                  <p data-i18n="footer.address_detail" style="font-weight: 500; font-size: 0.95rem;">H.No. 6/57, Daduluru, Chandracherla, Kanaganapalli – 515641, Sri Sathya Sai District, Andhra Pradesh, India</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Google Map Iframe Container -->
+        <div class="map-wrapper">
+          <h3 data-i18n="contact.map_title" style="margin-bottom: 20px; color: var(--color-primary);">Office Location (Chandracherla)</h3>
+          <div class="map-container">
+            <!-- TODO: client to confirm exact maps pin coordinate location -->
+            <iframe 
+              src="https://maps.google.com/maps?q=Chandracherla,Kanaganapalli,Andhra+Pradesh,India&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+              allowfullscreen="" 
+              loading="lazy"
+              title="Google Map location of Chandracherla">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Dynamic Footer -->
+  <footer id="site-footer"></footer>
+
+</body>
+</html>
